@@ -47,7 +47,7 @@ public:
 };
 
                                      //////Ö÷º¯Êý/////////
-//#include "pch.h"
+
 //#include <iostream>
 //#include <vector>
 //#include "6.h"

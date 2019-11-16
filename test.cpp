@@ -18,7 +18,7 @@ int test()
 		{
 			break;
 		}
-		
+
 	}
 	/*使用迭代器来访问vector类模板，vector<int>才是数据类型*/
 	vector<int>::iterator iter = c.end();
@@ -40,7 +40,7 @@ void caozuofu()
 	//int i = 10;
 	//int a[2] = { 1,2 };
 	//size_t d=sizeof(a);
-	
+
 
 	////int j = 20;
 	////int k = 30;
@@ -112,8 +112,8 @@ void caozuofu()
 	//cout << "the number of 3 is" << cnt_3 << endl;
 	//cout << "the number of other is" << cnt << endl;
 
-	
-	//do while 练习
+
+	//do while 练习，每日一练，do while 循环变量必须定义在do之前
 	string x;
 	do
 	{
@@ -123,12 +123,11 @@ void caozuofu()
 		cin >> number1;
 		cout << "please input other unmber:" << endl;
 		cin >> number2;
-		cout << "the sum of the two input unmber is:" << number1+number2<<endl;
-		cout << "more?(yes/no)"  << endl;
+		cout << "the sum of the two input unmber is:" << number1 + number2 << endl;
+		cout << "more?(yes/no)" << endl;
 		cin >> x;
 
-	}
-	while (!x.empty()&&x[0]!='n');
+	} while (!x.empty() && x[0] != 'n');
 }
 
 
