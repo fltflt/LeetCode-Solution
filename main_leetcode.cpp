@@ -4,9 +4,10 @@ using namespace std;
 
 int test();
 void caozuofu();
+void brake_lianxi();
 int main()
 {
-	caozuofu();
+	brake_lianxi();
 }
 
 

@@ -130,6 +130,20 @@ void caozuofu()
 	} while (!x.empty() && x[0] != 'n');
 }
 
+void brake_lianxi()
+{
+	/*break 只能出现在循环和switch语句中，break退出当前执行语句*/
+	/*continue 导致当次循环提前结束，对于for循环，继续求解表达式，对于while语句，继续求解循环条件*/
+	vector<int> vec = {1,2,3};
+	vector<int>::iterator iter = vec.begin();
+	while (iter != vec.end())
+		if (*iter == 2)
+			throw runtime_error("please check the input:");
+		else
+			++iter;
+}
+
+
 
 
 
