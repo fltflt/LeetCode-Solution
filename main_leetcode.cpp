@@ -1,13 +1,20 @@
 #include <iostream>
 using namespace std;
+#include "955.h"
 
-
-int test();
-void caozuofu();
-void brake_lianxi();
+class CircularQueue;
+CircularQueue function;
 int main()
 {
-	brake_lianxi();
+	vector<int>arr = function.init(5);
+	bool a=function.isEmpty();
+	cout << a << endl;
+
+	function.enqueue(3);
+	function.enqueue(4);
+	function.enqueue(5);
+	function.dequeue();
+
 }
 
 
