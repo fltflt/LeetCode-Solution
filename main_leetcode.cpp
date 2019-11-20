@@ -1,20 +1,52 @@
 #include <iostream>
 using namespace std;
-#include "955.h"
 
-class CircularQueue;
-CircularQueue function;
+
+#include "xunhuan_lianbiao.h"
+
+
+//class duilie;
+//duilie function;
+
+//class xunhuan_duilie;
+//xunhuan_duilie function;
+
+class xunhuanduilie;
+xunhuanduilie function;
 int main()
 {
-	vector<int>arr = function.init(5);
-	bool a=function.isEmpty();
-	cout << a << endl;
+	Queue* q = (Queue *)malloc(sizeof(Queue));
+	function.QInit(q);
+	function.QPush(q, 2);
+	function.QPush(q, 3);
+	function.QPush(q, 4);
+	function.QSzie(q);
 
-	function.enqueue(3);
-	function.enqueue(4);
-	function.enqueue(5);
-	function.dequeue();
 
+	//struct queue_node *Q =function.create_duilie();
+	////function.insert_queue(Q, 2);
+	////function.insert_queue(Q, 3);
+	////function.insert_queue(Q, 4);
+	////function.show_queue(Q);
+	////function.delete_queue(Q);
+	////function.delete_queue(Q);
+	////function.delete_queue(Q);
+	//function.empty_queue(Q);
+
+
+	//Queue* dummy = (Queue *)malloc(sizeof(Queue));  //ÉêÇë½áµã¿Õ¼ä
+	//function.Init(dummy);
+	//function.Append(dummy, 11);
+	//function.Append(dummy, 5);
+	//function.Append(dummy, 23);
+	//function.Append(dummy, 18);
+	//function.Pop(dummy);
+	//function.Show(dummy);
+	//function.Append(dummy, 33);
+	//function.Pop(dummy);
+	//function.Show(dummy);
+	//function.Append(dummy, 77);
+	//function.Show(dummy);
 }
 
 
