@@ -23,7 +23,7 @@ int main()
 	int a = 2;
 	int b = 3;
 	swap_copy(a,b);
-
+	cout << "a b is" << endl;
 	cout << a << endl;
 	cout << b << endl;
 
