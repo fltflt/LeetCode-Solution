@@ -1,61 +1,35 @@
 #include <iostream>
 using namespace std;
 
+void swap(int a, int b)
+{
+	int temp = b;
+	b = a;
+	a = temp;
+};
+void swap(int, int b = 10);
 
-#include "xunhuan_lianbiao.h"
-#include "642.h"
 
-class MovingAverage;
-MovingAverage function;
-
-//class duilie;
-//duilie function;
-
-//class xunhuan_duilie;
-//xunhuan_duilie function;
-
-//class xunhuanduilie;
-//xunhuanduilie function;
-
+char *init(int hht, int wd, char bakgrnd='ddd');
+void swap_copy(int &a, int &b)
+{
+	int temp = b;
+	b = a;
+	a = temp;
+};
 int main()
 {
-	MovingAverage(3);
-	function.next(1);
-	function.next(2);
-	function.next(3);
-	//Queue* q = (Queue *)malloc(sizeof(Queue));
-	//function.QInit(q);
-	//function.QPush(q, 2);
-	//function.QPush(q, 3);
-	//function.QPush(q, 4);
-	//function.QSzie(q);
 
+	int a = 2;
+	int b = 3;
+	swap_copy(a,b);
 
-	//struct queue_node *Q =function.create_duilie();
-	////function.insert_queue(Q, 2);
-	////function.insert_queue(Q, 3);
-	////function.insert_queue(Q, 4);
-	////function.show_queue(Q);
-	////function.delete_queue(Q);
-	////function.delete_queue(Q);
-	////function.delete_queue(Q);
-	//function.empty_queue(Q);
+	cout << a << endl;
+	cout << b << endl;
 
-
-	//Queue* dummy = (Queue *)malloc(sizeof(Queue));  //ÉêÇë½áµã¿Õ¼ä
-	//function.Init(dummy);
-	//function.Append(dummy, 11);
-	//function.Append(dummy, 5);
-	//function.Append(dummy, 23);
-	//function.Append(dummy, 18);
-	//function.Pop(dummy);
-	//function.Show(dummy);
-	//function.Append(dummy, 33);
-	//function.Pop(dummy);
-	//function.Show(dummy);
-	//function.Append(dummy, 77);
-	//function.Show(dummy);
 }
+
+
 
 
 
