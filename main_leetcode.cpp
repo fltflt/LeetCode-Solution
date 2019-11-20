@@ -3,7 +3,10 @@ using namespace std;
 
 
 #include "xunhuan_lianbiao.h"
+#include "642.h"
 
+class MovingAverage;
+MovingAverage function;
 
 //class duilie;
 //duilie function;
@@ -11,16 +14,21 @@ using namespace std;
 //class xunhuan_duilie;
 //xunhuan_duilie function;
 
-class xunhuanduilie;
-xunhuanduilie function;
+//class xunhuanduilie;
+//xunhuanduilie function;
+
 int main()
 {
-	Queue* q = (Queue *)malloc(sizeof(Queue));
-	function.QInit(q);
-	function.QPush(q, 2);
-	function.QPush(q, 3);
-	function.QPush(q, 4);
-	function.QSzie(q);
+	MovingAverage(3);
+	function.next(1);
+	function.next(2);
+	function.next(3);
+	//Queue* q = (Queue *)malloc(sizeof(Queue));
+	//function.QInit(q);
+	//function.QPush(q, 2);
+	//function.QPush(q, 3);
+	//function.QPush(q, 4);
+	//function.QSzie(q);
 
 
 	//struct queue_node *Q =function.create_duilie();
