@@ -6,6 +6,7 @@ using namespace std;
 #include<iostream>
 using namespace std;
 #include<vector>
+#include<list>
 
 class MyStack
 {
@@ -140,9 +141,8 @@ public:
 		if (stackEmpty())
 			cout << "栈空！，无法出栈" << endl;
 		cout << "出栈元素为" << stack_vector[stack_vector.back()-1] << endl;
-		m_iTop--;
-
 		stack_vector.pop_back();
+		m_iTop--;
 	}
 
 	void stack_chuzhan()
@@ -154,4 +154,130 @@ public:
 		cout << endl;
 
 	}
+};
+
+class MyStack_list
+{
+private:
+	int m_iTop;          // 栈顶
+	list<int> stack_list;
+public:
+	/*构造函数，确保每一个数据成员都初始化*/
+	MyStack_list()
+	{
+		m_iTop = 0;
+	}
+
+	bool stackEmpty()
+	{
+		if (m_iTop == 0)
+		{
+			cout << "栈空！" << endl;
+			return true;
+		}
+		else
+		{
+			cout << "栈非空！" << endl;
+			return false;
+
+		}
+	}
+
+
+	void clearStack()
+	{
+		m_iTop = 0;
+		cout << "栈空！" << endl;
+	}
+
+	void stackLength()
+	{
+		cout << "目前栈的长度为" << stack_list.size() << endl;
+	}
+
+	void push(int elem)
+	{
+		stack_list.push_back(elem);
+		m_iTop++;
+	}
+
+	void pop()
+	{
+		if (stackEmpty())
+			cout << "栈空！，无法出栈" << endl;
+		m_iTop--;
+		stack_list.pop_back();
+	}
+
+	void stack_chuzhan()
+	{
+		if (stackEmpty())
+			return;
+		else
+		{
+			stack_list.reverse();
+			list<int>::iterator it;
+			for (it = stack_list.begin(); it != stack_list.end(); it++)
+			{
+				cout << *it <<" ";
+			}
+		}
+
+	}
+};
+
+
+class Stack
+{
+private:
+	vector<int> stack_vector;     // 栈空间的指针
+	int m_iTop = 0;          // 栈顶
+public:
+
+	/*
+	 * @param x: An integer
+	 * @return: nothing
+	 */
+	void push(int x)
+	{
+		stack_vector.push_back(x);
+		m_iTop++;
+	};
+	/*
+	 * @return: nothing
+	 */
+	void pop()
+	{
+		if (isEmpty())
+			return;
+		else 
+		{
+			stack_vector.pop_back();
+			m_iTop--;
+		}
+
+	};
+
+	/*
+	 * @return: An integer
+	 */
+	int top()
+	{
+		return stack_vector.back();
+	};
+
+	/*
+	 * @return: True if the stack is empty
+	 */
+	bool isEmpty()
+	{
+		if (m_iTop == 0)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	};
 };

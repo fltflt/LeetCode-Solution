@@ -3,7 +3,7 @@ using namespace std;
 #include <fstream>
 #include <stack>
 
-
+#include <list>
 #include "stack_lianxi.h"
 #include <vector>
 void swap(int a, int b)
@@ -99,9 +99,53 @@ void stack_vector()
 
 };
 
+void stack_list()
+{
+	MyStack_list();
+	class MyStack_list function;
+	function.push(1);
+	function.push(1);
+	function.push(1);
+
+	function.stackEmpty();
+	function.stackLength();
+	function.stack_chuzhan();
+	function.pop();
+	//stack_list.push(1);
+	//pStack_list.push(2);
+	//pStack_list.push(3);
+	//pStack_list.push(4);
+	//pStack_list.push(5);
+	//pStack_list.push(6);
+	//pStack_list.push(7);
+
+
+	//pStack_list.stackEmpty();
+
+	//pStack_list.stackLength();
+	//pStack_list.stack_chuzhan();
+	//pStack_list.pop();
+
+};
+
+void stack()
+{
+	class Stack function;
+	function.push(1);
+	function.pop();
+	function.push(2);
+	function.isEmpty();
+	function.top();
+	function.pop();
+	function.isEmpty();
+};
+
 int main()
 {
-	stack_vector();
+
+
+
+
 
 }
 
