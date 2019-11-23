@@ -124,19 +124,6 @@ public:
 		cout << "栈空！"<<endl;
 	}
 
-	//bool stackFull()
-	//{
-	//	if (stack_vector.size() >= size_vector)
-	//	{
-	//		return true;
-	//		cout << "栈满！" << endl;
-
-	//	}
-	//	else
-	//	{
-	//		return false;
-	//	}
-	//}
 	void stackLength()
 	{
 		cout << "目前栈的长度为"<<stack_vector.size() << endl;
