@@ -6,6 +6,7 @@ using namespace std;
 #include <list>
 #include "stack_lianxi.h"
 #include <vector>
+#include "1206.h"
 void swap(int a, int b)
 {
 	int temp = b;
@@ -128,7 +129,7 @@ void stack_list()
 
 };
 
-void stack()
+void stack_oop()
 {
 	class Stack function;
 	function.push(1);
@@ -140,11 +141,48 @@ void stack()
 	function.isEmpty();
 };
 
+vector<int> nextGreaterElement(vector<int> A,vector<int> B)
+{
+	vector<int> res;
+	int m;
+	for (int i = 0; i < A.size(); i++)
+	{
+		for (int j = 0; j < B.size(); j++)
+		{
+			if (A[i] == B[j])
+			{
+				m=j;
+				int k=m+1;
+				for (k; k < B.size();)
+				{
+					if (B[k] > A[i])
+					{
+						res.push_back(B[k]);
+						break;
+					}
+					else
+					{
+						k++;
+					}
+				}
+				if (k == B.size())
+				{
+					res.push_back(-1);
+				}
+
+				
+			}
+		}
+	}
+	return res;
+}
 int main()
 {
 
-
-
+	vector<int> A = { 4,1,2 };
+	vector<int> B = {1,3,4,2};
+	class Solution1 fun;
+	vector<int> res = fun.nextGreaterElement(A,B);
 
 
 }
