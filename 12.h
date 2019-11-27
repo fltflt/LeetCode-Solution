@@ -35,3 +35,26 @@ public:
 
 	}
 };
+//Ö÷º¯Êý
+
+//#include <iostream>
+//using namespace std;
+//#include<vector>
+//#include<algorithm>
+//#include "12.h"
+//
+//int main()
+//{
+//	class MinStack stack_test;
+//	stack_test.push(3);
+//
+//	stack_test.push(2);
+//
+//	stack_test.push(1);
+//	cout << stack_test.min() << endl;
+//	cout << stack_test.pop() << endl;
+//	cout << stack_test.min() << endl;
+//	cout << stack_test.pop() << endl;
+//	cout << stack_test.min() << endl;
+//
+//}
