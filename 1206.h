@@ -42,3 +42,12 @@ public:
 		return res;
 	}
 }; 
+
+////Ö÷º¯Êý
+//int main()
+//{
+//	vector<int> A = { 4,1,2 };
+//	vector<int> B = { 1,3,4,2 };
+//	class Solution1 fun;
+//	vector<int> res = fun.nextGreaterElement(A, B);
+//}

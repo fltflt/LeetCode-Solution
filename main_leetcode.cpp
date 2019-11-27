@@ -176,7 +176,9 @@ vector<int> nextGreaterElement(vector<int> A,vector<int> B)
 	}
 	return res;
 }
-int main()
+
+
+void test()
 {
 
 	vector<int> A = { 4,1,2 };
