@@ -2,7 +2,8 @@
 using namespace std;
 #include<vector>
 #include<algorithm>
-#include "12.h"
+#include<numeric>
+#include "1734.h"
 #include<map>
 #include <string> 
 #include<set>
@@ -82,11 +83,29 @@ void set_operator()
 
 }
 
-int i = 0;
+
 int main()
 {
+	class solve_1734 solve_1734_function;
+	vector<int> A = { 3,1,2,4 };
+	int sum = solve_1734_function.sumSubarrayMins(A);
 
-	int i = i;
+	vector<string> vec2;
+	vec2 = { "aa","aa","bb","bb","cc","dd" };
+	vector<string>::iterator iter = unique(vec2.begin(), vec2.end());
+	vec2.erase(iter, vec2.end());
+
+	vector<int> vec;
+	cout << "please input the number" << endl;
+	int number;
+	cin >> number;
+	vector<int>::iterator iter1 = find(vec.begin(), vec.end(), number);
+	cout << "the number " << number << (iter1 == vec.end() ? " is not present" : " is present") << endl;
+
+	cout << accumulate(vec.begin(), vec.end(), 0) << endl;
+	fill(vec.begin(), vec.end(), 1);
+	fill_n(vec2.begin(), 3, 0);
+	cout << accumulate(vec.begin(), vec.end(), 0) << endl;
 
 }
 
