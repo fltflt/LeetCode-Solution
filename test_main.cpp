@@ -3,7 +3,7 @@ using namespace std;
 #include<vector>
 #include<algorithm>
 #include<numeric>
-#include "1734.h"
+#include "6.h"
 #include<map>
 #include <string> 
 #include<set>
@@ -66,7 +66,7 @@ void map_operator()
 
 	mapStudent.erase(mapStudent.begin(), mapStudent.end());
 }
-void set_operator()
+static void set_operator()
 {
 	vector<int> vec;
 	for (int i = 0; i < 10; i++)
@@ -84,29 +84,101 @@ void set_operator()
 }
 
 
-int main()
+//void test_1()
+//{
+//	class solve_1734 solve_1734_function;
+//	vector<int> A = { 3,1,2,4 };
+//	int sum = solve_1734_function.sumSubarrayMins(A);
+//
+//	vector<string> vec2;
+//	vec2 = { "aa","aa","bb","bb","cc","dd" };
+//	vector<string>::iterator iter = unique(vec2.begin(), vec2.end());
+//	vec2.erase(iter, vec2.end());
+//
+//	vector<int> vec;
+//	cout << "please input the number" << endl;
+//	int number;
+//	cin >> number;
+//	vector<int>::iterator iter1 = find(vec.begin(), vec.end(), number);
+//	cout << "the number " << number << (iter1 == vec.end() ? " is not present" : " is present") << endl;
+//
+//	cout << accumulate(vec.begin(), vec.end(), 0) << endl;
+//	fill(vec.begin(), vec.end(), 1);
+//	fill_n(vec2.begin(), 3, 0);
+//	cout << accumulate(vec.begin(), vec.end(), 0) << endl;
+//}
+
+class CExample
 {
-	class solve_1734 solve_1734_function;
-	vector<int> A = { 3,1,2,4 };
-	int sum = solve_1734_function.sumSubarrayMins(A);
+public:
+	int a;
+	float b;
+	//构造函数初始化列表
+	CExample() : a(10), b(22)
+	{};
+	//构造函数内部赋值
+	CExample& example_test1()
+	{
+		return *this;
+	}
+	CExample& example_test2()
+	{
+		return *this;
+	};
+	
+};
 
-	vector<string> vec2;
-	vec2 = { "aa","aa","bb","bb","cc","dd" };
-	vector<string>::iterator iter = unique(vec2.begin(), vec2.end());
-	vec2.erase(iter, vec2.end());
+class Box
+{
+	double width;
+public:
+	friend void printWidth(Box box);
+	// 成员函数定义
+	void setWidth(double wid)
+	{
+		width = wid;
+	}
+};
 
-	vector<int> vec;
-	cout << "please input the number" << endl;
-	int number;
-	cin >> number;
-	vector<int>::iterator iter1 = find(vec.begin(), vec.end(), number);
-	cout << "the number " << number << (iter1 == vec.end() ? " is not present" : " is present") << endl;
-
-	cout << accumulate(vec.begin(), vec.end(), 0) << endl;
-	fill(vec.begin(), vec.end(), 1);
-	fill_n(vec2.begin(), 3, 0);
-	cout << accumulate(vec.begin(), vec.end(), 0) << endl;
-
+// 请注意：printWidth() 不是任何类的成员函数
+void printWidth(Box box)
+{
+	/* 因为 printWidth() 是 Box 的友元，它可以直接访问该类的任何成员 */
+	cout << "Width of box : " << box.width << endl;
 }
+
+class Point
+{
+public:
+	void init()
+	{
+	}
+	static void output()
+	{
+	}
+};
+// 程序的主函数
+int test1()
+{
+	Box box;
+
+	// 使用成员函数设置宽度
+	box.setWidth(10.0);
+
+	// 使用友元函数输出宽度
+	printWidth(box);
+
+	//	CExample item;
+//	item.example_test2();
+	Point itrr;
+	itrr.init();
+	Point::output();
+	return 0;
+}
+
+
+
+
+
 
 

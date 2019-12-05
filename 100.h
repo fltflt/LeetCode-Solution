@@ -32,7 +32,27 @@ public:
 		nums = suoyin;
 		return nums.size();
 	}
-		
+	
+	int removeDuplicates1(vector<int> &nums)
+	{
+		if (nums.empty())
+		{
+			return 0;
+		}
+
+
+		int n = nums.size(), k = 0;
+
+		for (int i = 1; i < n; ++i)
+		{
+			if (nums[i] != nums[k])
+			{
+				nums[++k] = nums[i];
+			}//if
+		}//for
+		nums.resize(k + 1);
+		return k + 1;
+	}
 };
 
 ///Ö÷º¯Êý
