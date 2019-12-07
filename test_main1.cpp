@@ -97,7 +97,7 @@ public:
 class OtherAnimal : public Animal
 {
 };
-int main()
+int test_6()
 {
 	std::vector<Animal*> animals;
 	animals.push_back(new Animal());
