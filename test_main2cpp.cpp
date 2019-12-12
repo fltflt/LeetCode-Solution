@@ -85,13 +85,17 @@ int test_100()
 
 	signed a = -1;
 	unsigned b = -1;
+	signed a = -1;
+	unsigned b = 1;
+	int ff;
 	return 0;
+	size_t n=10;
+	int *p = new int[n];
+	delete[] p;
 }
 
 int main()
 {
-	signed a = -1;
-	unsigned b = 1;
-	int ff;
+
 	return 0;
 }
