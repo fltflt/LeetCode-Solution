@@ -6,7 +6,7 @@
 /*length 为字符数组str的总容量，大于或等于字符串str的实际长度*/
 void ReplaceBlank(char str[], int length)
 {
-	if (str == nullptr && length <= 0)
+	if (str == NULL && length <= 0)
 		return;
 
 	/*originalLength 为字符串str的实际长度*/
@@ -46,6 +46,42 @@ void ReplaceBlank(char str[], int length)
 		--indexOfOriginal;
 	}
 };
+
+void Replace(char str[], int len)
+{
+	if (len == 0 || str == NULL)
+		return;
+	/*求出替换后字符串的长度*/
+	int length_space = 0;
+	int length_str = 0;
+	int i = 0;
+	while(str[i]!='\0')
+	{
+		length_str++;
+		if (str[i] == ' ')
+			length_space++;
+		i++;
+	}
+	int new_length = length_str + length_space * 2;
+
+	if (new_length < length_str)
+		return;
+	while (new_length>length_str&&length_str>=0)
+	{
+		if (str[length_str] == ' ')
+		{
+			str[new_length--] = '0';
+			str[new_length--] = '2';
+			str[new_length--] = '%';
+		}
+		else
+		{
+			str[new_length--] = str[length_str];
+		}
+		length_str--;
+	}
+
+}
 
 /*主函数*/
 //#include "pch.h"

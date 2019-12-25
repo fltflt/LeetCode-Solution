@@ -83,19 +83,27 @@ int test_100()
 
 	
 
-	signed a = -1;
-	unsigned b = -1;
-	signed a = -1;
-	unsigned b = 1;
+	//signed a = -1;
+	//unsigned b = -1;
+	//signed a = -1;
+	//unsigned b = 1;
 	int ff;
 	return 0;
 	size_t n=10;
 	int *p = new int[n];
 	delete[] p;
+
+	vector<string>::iterator ivec;
+	ivec->empty();
+	vector<float> ivecw;
+	ivecw.empty();
+
 }
 
-int main()
+int test_1()
 {
-
 	return 0;
 }
+
+
+
