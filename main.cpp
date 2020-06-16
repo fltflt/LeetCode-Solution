@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
 #include <iostream>
-#include "58最后一个单词的长度.h"
+#include "66加一.h"
 
 using namespace std;
 
@@ -9,8 +9,8 @@ using namespace std;
 int main()
 {
 	Solution tmp;
-	string aa = " a";
-	int result = tmp.lengthOfLastWord(aa);
+	vector<int> aa = {9,9};
+	vector<int> result = tmp.plusOne(aa);
 	/*bool result = tmp.isPalindrome(a);*/
 
 
