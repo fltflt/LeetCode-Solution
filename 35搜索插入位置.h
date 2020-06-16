@@ -1,0 +1,36 @@
+#pragma once
+#include<string>
+using namespace std;
+#include <iostream>
+class Solution {
+public:
+	int searchInsert(vector<int>& nums, int target) 
+	{
+		for (int i=0;i<nums.size();i++)
+		{
+			if (nums[i] == target)
+			{
+				return i;
+			}
+		}
+		if (nums[nums.size()-1]<target)
+		{
+			return nums.size();
+		}
+		if (nums[0] > target)
+		{
+			return 0;
+		}
+
+		for (int i = 0; i < nums.size()-1; i++)
+		{
+			if (nums[i] < target&&nums[i+1] > target)
+			{
+				return i + 1;
+			}
+
+		}
+		return 0;
+
+	}
+};

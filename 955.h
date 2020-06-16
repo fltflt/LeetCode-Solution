@@ -9,25 +9,20 @@ public:
 	 * @return:  return true if the array is full
 	 */
 	//用数组初始化队列
-	vector<int> init(int n)
-	{
-		for (int i = 0; i < n; i++)
-			arr.push_back(0);
 
-		return arr;
-
-	}
-	//判断是否为空队列
+	CircularQueue(int n) : arr(n,0),size(0) {}
+	//判断队列是否满
 	bool isFull()
-	{
-		return size == 0;
-
-	}
-	//判断队列是否为空
-	bool isEmpty()
 	{
 		return size == arr.size();
 	}
+
+	//判断队列是否空
+	bool isEmpty()
+	{
+		return size == 0;
+	}
+
 	//入队一个元素
 	void enqueue(int element)
 	{
@@ -48,4 +43,5 @@ private:
 	int size;
 	int start;
 	int end;
+
 };
