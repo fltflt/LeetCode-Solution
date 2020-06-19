@@ -1,17 +1,17 @@
 #pragma once
 #include <vector>
 #include <iostream>
-#include "66加一.h"
+#include "69x的平方根.h"
 
 using namespace std;
 
-
+#define Day 7
 int main()
 {
+	
 	Solution tmp;
-	vector<int> aa = {9,9};
-	vector<int> result = tmp.plusOne(aa);
-	/*bool result = tmp.isPalindrome(a);*/
+
+	int result = tmp.mySqrt(8);
 
 
 	return 0;
